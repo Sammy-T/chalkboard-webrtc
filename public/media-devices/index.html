@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Media Devices</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+        <script src="js/script.js" defer></script>
+
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+
+    <body>
+        <header class="container">
+            <h1>Media Devices</h1>
+            <nav>
+                <h5><a href="../">Home</a></h5>
+            </nav>
+        </header>
+
+        <main class="container">
+            <section class="row">
+                <div class="column">
+                    <video id="local-video" autoplay playsinline controls></video>
+                </div>
+
+                <div class="column column-33">
+                    <fieldset id="media-selection">
+                        <fieldset>
+                            <legend>Video Input type</legend>
+    
+                            <label for="camera" class="label-inline">
+                                <input type="radio" class="video-type" name="video-type" id="camera" value="camera" checked>
+                                Camera
+                            </label>
+                            <label for="screen-share" class="label-inline">
+                                <input type="radio" class="video-type" name="video-type" id="screen-share" value="screen-share">
+                                Screen share
+                            </label>
+                        </fieldset>
+
+                        <fieldset id="video-field">
+                            <label for="video-select">Video Device</label>
+                            <select id="video-select" name="video-select">
+                            </select>
+
+                            <label for="audio-select">Audio Device</label>
+                            <select id="audio-select" name="audio-select">
+                            </select>
+                        </fieldset>
+                    </fieldset>
+
+                    <button id="play-button" class="button">Start</button>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

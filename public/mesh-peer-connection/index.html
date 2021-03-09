@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Peer Connection</title>
+
+        <!-- Milligram -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+        <!-- Firebase -->
+        <script src="/__/firebase/8.2.3/firebase-app.js" defer></script>
+        <script src="/__/firebase/8.2.3/firebase-firestore.js" defer></script>
+        <script src="/__/firebase/init.js" defer></script>
+
+        <script src="js/script.js" defer></script>
+
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+
+    <body>
+        <header class="container">
+            <h1>Mesh Peer Connection</h1>
+            <nav>
+                <h5><a href="../">Home</a></h5>
+            </nav>
+        </header>
+
+        <main class="container">
+            <section class="row">
+                <div class="column">
+                    <button id="create-room">Create room</button>
+                    <button id="join-room">Join room</button>
+                    <button id="hang-up" disabled>Hang up</button>
+
+                    <div id="messages-container">
+                    </div>
+        
+                    <textarea id="message" name="message" placeholder="Type your message"></textarea>
+                    <button id="send" disabled>Send</button>
+                    <small>Shortcut: Control+Enter</small>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

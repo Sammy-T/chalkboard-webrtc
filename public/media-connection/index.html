@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Media Connection</title>
+
+        <!-- Milligram -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+        <!-- Firebase -->
+        <script src="/__/firebase/8.2.3/firebase-app.js" defer></script>
+        <script src="/__/firebase/8.2.3/firebase-firestore.js" defer></script>
+        <script src="/__/firebase/init.js?useEmulator=true" defer></script>
+
+        <link rel="stylesheet" href="css/styles.css">
+
+        <script src="js/script.js" defer></script>
+    </head>
+
+    <body>
+        <header class="container">
+            <h1>Media Connection</h1>
+            <nav>
+                <h5><a href="../">Home</a></h5>
+            </nav>
+        </header>
+
+        <main class="container">
+            <!-- Room controls -->
+            <section class="row">
+                <div class="column">
+                    <button id="create-room">Create Room</button>
+                    <button id="join-room">Join Room</button>
+                    <button id="hang-up" disabled>Hang Up</button>
+                </div>
+            </section>
+
+            <!-- Video -->
+            <section class="row">
+                <div class="column">
+                    <video id="remote-video" autoplay playsinline controls></video>
+                </div>
+                <div class="column">
+                    <video id="local-video" autoplay playsinline controls></video>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
